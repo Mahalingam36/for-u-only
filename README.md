@@ -1,2 +1,77 @@
-# for-u-only
-For my love
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My Love 💖</title>
+  <link rel="stylesheet" href="promise.css">
+</head>
+<body>
+
+<audio id="bgMusic" autoplay loop>
+  <!-- Replace with your Tamil love song file -->
+  <source src="tamil-love.mp3" type="audio/mpeg">
+</audio>
+
+<div class="hearts"></div>
+
+<!-- Envelope Section -->
+<div class="envelope-container" onclick="openEnvelope()">
+  <div class="envelope" id="envelope">
+    <div class="flap"></div>
+    <div class="letter" id="letter">
+      <h2>Happy Promise Day 💖</h2>
+      <p id="promiseText"></p>
+      <button onclick="nextPromise(event)">Next 💌</button>
+    </div>
+  </div>
+</div>
+
+<!-- Final Popup -->
+<div class="final-popup" id="finalPopup">
+  <div class="popup-content">
+    <h1>Will You Stay Forever With Me? 💍💖</h1>
+    <button onclick="sayYes()">Yes ❤️</button>
+  </div>
+</div>
+
+<script src="promise.js"></script>
+</body>
+<title>I Love U</title>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        // Initialize EmailJS
+        (function(){
+            emailjs.init("rUOm_RjL_sueQXqck"); // Replace with your EmailJS User ID
+        })();
+    </script>
+</head>
+<body>
+
+    <button id="sendBtn">I Like U❤️</button>
+
+    <script>
+        document.getElementById('sendBtn').addEventListener('click', function() {
+
+            // The parameters of the email
+            const params = {
+                to_email: "lmaha9747@gmail.com", // Replace with your email
+                subject: "Button Clicked!",
+                message: "Someone clicked your button on your website."
+            };
+
+            // Send the email
+            emailjs.send('service_fipd5qd', 'default_template', params)
+            .then(function(response) {
+                alert('Email sent successfully!');
+                console.log('SUCCESS!', response.status, response.text);
+            }, function(error) {
+                alert('Failed to send email.');
+                console.log('FAILED...', error);
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+</html>
